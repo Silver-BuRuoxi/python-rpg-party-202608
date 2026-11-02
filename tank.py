@@ -6,6 +6,10 @@ class Tank(Hero):
         super().__init__(name, hp)
         self.shield = shield
 
+    def use_special_ability(self) -> str:
+        self.shield = 20
+        return "Shield activated"
+
     def shield_damage(self, damage: int):
         self.shield = max(0, self.shield - damage)
 
