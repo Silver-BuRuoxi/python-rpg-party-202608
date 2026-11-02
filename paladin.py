@@ -1,10 +1,9 @@
 from hero import Hero
 
 class Paladin(Hero):
-    def __init__(self, name: str, hp: int = 80, intelligence: int = 100, damage: int = 200):
+    def __init__(self, name: str, hp: int = 80, intelligence: int = 100):
         super().__init__(name, hp)
         self.intelligence = intelligence
-        self.damage = damage
 
     def use_special_ability(self) -> str:
         self.hp*=2
