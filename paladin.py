@@ -9,3 +9,5 @@ class Paladin(Hero):
         self.hp*=2
         self.intelligence*=2
         return f"{self.name} have sanctioned you in the name of justice!"
+
+#test
